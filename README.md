@@ -47,4 +47,4 @@
  
  ## 예상 게임 실행흐름
  ![image](https://user-images.githubusercontent.com/63137718/95847577-daf27180-0d87-11eb-98b4-9dc98d89735e.png)
- 
+ ![image](https://user-images.githubusercontent.com/63137718/95847715-02e1d500-0d88-11eb-9844-1230853a34c6.png)
