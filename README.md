@@ -45,10 +45,10 @@
   -운석을 피하는데 도움을 주는 아이템 구현
   -사운드 구현
  
- ## 예상 게임 실행흐름
+ # 예상 게임 실행흐름
  ![image](https://user-images.githubusercontent.com/63137718/95847577-daf27180-0d87-11eb-98b4-9dc98d89735e.png)
  ![image](https://user-images.githubusercontent.com/63137718/95847849-3290dd00-0d88-11eb-88a8-d71f4c9a77e3.png)
  
- ### 개발일정
+ # 개발일정
 
  ![image](https://user-images.githubusercontent.com/63137718/95847944-55bb8c80-0d88-11eb-8f0f-4f428bbc8ae0.png)
