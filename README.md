@@ -47,4 +47,8 @@
  
  ## 예상 게임 실행흐름
  ![image](https://user-images.githubusercontent.com/63137718/95847577-daf27180-0d87-11eb-98b4-9dc98d89735e.png)
- ![image](https://user-images.githubusercontent.com/63137718/95847715-02e1d500-0d88-11eb-9844-1230853a34c6.png)
+ ![image](https://user-images.githubusercontent.com/63137718/95847849-3290dd00-0d88-11eb-88a8-d71f4c9a77e3.png)
+ 
+ ### 개발일정
+
+ 
