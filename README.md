@@ -51,4 +51,4 @@
  
  # 개발일정
 
- ![image](https://user-images.githubusercontent.com/63137718/95847944-55bb8c80-0d88-11eb-8f0f-4f428bbc8ae0.png)
+![캡처](https://user-images.githubusercontent.com/63137718/97064983-222cfd80-15e5-11eb-8dd5-d49330c85b58.PNG)
