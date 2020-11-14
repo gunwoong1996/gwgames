@@ -28,14 +28,21 @@
  ●8.sound = 사운드 구현
 
 #### GameState 세부사항
-1.main_state = 게임실행처리
-2.crush = 충돌효과 구현
-3.meteor = 운석움직임 구현
-4.background = 배경효과 구현
-5.gobj = 이미지처리 구현
-6.player = 플레이어 움직임 구현 
-7.start_state =시작화면 구현
-8.sound = 사운드 구현
+ ●1.main_state = 게임실행처리
+
+ ●2.crush = 충돌효과 구현
+
+ ●3.meteor = 운석움직임 구현
+
+ ●4.background = 배경효과 구현
+
+ ●5.gobj = 이미지처리 구현
+
+ ●6.player = 플레이어 움직임 구현 
+
+ ●7.start_state =시작화면 구현
+
+ ●8.sound = 사운드 구현
 
 
 .처리해야할 키 목록:플레이어 조작키,아이템 사용키,공격 키,타이틀화면에서 메인화면으로 이동하는 키,게임종료 키
