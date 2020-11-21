@@ -1,18 +1,17 @@
-##메테오 효과
-
+#로켓바디처리
 from pico2d import *
 import gfw
 import random
-MOVE_PPS = 200
+MOVE_PPS = 100
 
-class Meteor:
+class Rocketbody:
     #메테오크기
     SIZE = 70
 
     def __init__(self, pos, delta):
         self.pos = pos
         self.delta = delta
-        self.image = gfw.image.load('res/meteor.png')
+        self.image = gfw.image.load('res/rocketbody.png')
         mag = random.uniform(0.7, 1.0)
         self.radius = mag * self.image.h //2
 
@@ -32,8 +31,8 @@ class Meteor:
     #맵상 경계설정
     def in_boundary(self):
         x,y = self.pos
-        if x < -Meteor.SIZE: return False
-        if y < -Meteor.SIZE: return False
-        if x > get_canvas_width() + Meteor.SIZE: return False
-        if y > get_canvas_height() + Meteor.SIZE: return False
+        if x < -Rocketbody.SIZE: return False
+        if y < -Rocketbody.SIZE: return False
+        if x > get_canvas_width() + Rocketbody.SIZE: return False
+        if y > get_canvas_height() + Rocketbody.SIZE: return False
         return True

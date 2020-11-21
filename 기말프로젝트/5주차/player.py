@@ -18,7 +18,6 @@ def init():
     o2insert = gfw.image.load('res/o2insert.png')
     o2del = gfw.image.load('res/o2del.png')
     o2tank =gfw.image.load('res/o2tank.png')
-
     reset()
 
 def reset():
@@ -49,18 +48,14 @@ def update():
 
 def draw():
     global image, pos
-    image.draw(*pos)
-    o2tank.draw(get_canvas_width() - 30,get_canvas_height() - 680)
-
-
+    image.draw(*pos)#플레이어
+    o2tank.draw(get_canvas_width() - 30,get_canvas_height() - 680)#산소통이미지
+    #산소통게이지
     x, y = get_canvas_width() - 36, get_canvas_height() - 780
     for i in range(MAX_LIFE):
         o2 = o2insert if i < life else o2del
         o2.draw(x, y)
-        #y += o2.w
         y+=30
-
-
 
 def handle_event(e):
     global delta_x, delta_y
