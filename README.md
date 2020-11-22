@@ -11,41 +11,37 @@
 
 
 ### GameState (Scene)
- ●1.main_state = 게임실행처리
-
- ●2.crush = 충돌효과 구현
-
- ●3.meteor = 운석움직임 구현
-
- ●4.background = 배경효과 구현
+ main_state,generator,meteor,rockethead,rocketbody,rocketleft,rocketlight,shield,moveplayer,stage1bg,stage2bg,start_state,howtostage1
  
- ●5.gobj = 이미지처리 구현
- 
- ●6.player = 플레이어 움직임 구현 
- 
- ●7.start_state =시작화면 구현
- 
- ●8.sound = 사운드 구현
 
 #### GameState 세부사항
- ●1.main_state = 게임실행처리
+ ●1.main_state = 스테이지1 게임실행
 
- ●2.crush = 충돌효과 구현
+ ●2.generator = 아이템 및 운석 움직임처리
 
- ●3.meteor = 운석움직임 구현
+ ●3.meteor = 운석
 
- ●4.background = 배경효과 구현
+ ●4.rockethead = 로켓 머리
+ 
+ ●5.rocketbody = 로켓 몸통
+ 
+ ●6.rocketleft = 로켓 왼쪽날개
+ 
+ ●7.rocketlight = 로켓 오른쪽날개
+ 
+ ●8.shield = 쉴드 아이템
+ 
+ ●9.moveplayer = 플레이어 움직임효과
+ 
+ ●10.stage1bg = 스테이지1배경
+ 
+ ●11.stage2bg = 스테이지2배경
+ 
+ ●12.start_state = 시작화면
+ 
+ ●13.howtostage1 = 스테이지1 설명
 
- ●5.gobj = 이미지처리 구현
-
- ●6.player = 플레이어 움직임 구현 
-
- ●7.start_state =시작화면 구현
-
- ●8.sound = 사운드 구현
-
-
-.처리해야할 키 목록:플레이어 조작키,아이템 사용키,공격 키,타이틀화면에서 메인화면으로 이동하는 키,게임종료 키
+.처리해야할 키 목록:플레이어 조작키,타이틀화면에서 메인화면으로 이동하는 키,게임종료 키
 
  # 개발 범위
   -사방에서 날아오는 운석 구현
@@ -55,8 +51,7 @@
  
  # 예상 게임 실행흐름
  
-![26747E485378C76D2C](https://user-images.githubusercontent.com/63137718/99144814-5ce9f900-26ac-11eb-8537-7a58a17ddbaf.png)
- ![image](https://user-images.githubusercontent.com/63137718/95847849-3290dd00-0d88-11eb-88a8-d71f4c9a77e3.png)
+
  
  # 개발일정
 
