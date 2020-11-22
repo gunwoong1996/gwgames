@@ -1,6 +1,6 @@
 # 기말프로젝트
 
-## 게임의 소개
+# 게임의 소개
 1.제목: watch out!
 
 
@@ -10,11 +10,11 @@
 3.게임 방법: 플레이어가 날아오는 물체를 상하좌우키를 이용해서 피하고 공격버튼과 각종 아이템을 이용하여 물체를 피하는데 도움을 받는다.
 
 
-### GameState (Scene)
+# GameState (Scene)
  main_state,generator,meteor,rockethead,rocketbody,rocketleft,rocketlight,shield,moveplayer,stage1bg,stage2bg,start_state,howtostage1
  
 
-#### GameState 세부사항
+# GameState 세부사항
  ●1.main_state = 스테이지1 게임실행
 
  ●2.generator = 아이템 및 운석 움직임처리
