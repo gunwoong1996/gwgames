@@ -50,6 +50,12 @@
   -사운드 구현
  
  # 예상 게임 실행흐름
+ ![캡처](https://user-images.githubusercontent.com/63137718/99911715-a637e980-2d39-11eb-9a88-4a02049abc59.PNG)
+ ![캡처1](https://user-images.githubusercontent.com/63137718/99911717-a89a4380-2d39-11eb-8a4d-8330fb042293.PNG)
+ ![캡처3](https://user-images.githubusercontent.com/63137718/99911719-a9cb7080-2d39-11eb-8083-73d901991488.PNG)
+ ![캡처4](https://user-images.githubusercontent.com/63137718/99911721-aa640700-2d39-11eb-8d2d-db611fab86bf.PNG)
+ ![캡처5](https://user-images.githubusercontent.com/63137718/99911724-ab953400-2d39-11eb-87fd-a577fea6c400.PNG)
+
  
 
  
