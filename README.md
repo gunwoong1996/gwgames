@@ -19,7 +19,7 @@
  1인칭시점으로 정면에서 날아오는 객체를 표현하려고 했으나 1인칭 시점에서는 아이템을 포함한 여러가지 요소를 한눈에 보여주기가 힘들다고 생각하여
  교수님께 말씀드리고 정면이 아닌 사방에서 날아오는 객체를  표현하는것으로 변경함.
 # 진행상황
- ![캡처](https://user-images.githubusercontent.com/63137718/99943903-61ea2f00-2db5-11eb-865e-78e7c8ce5bcf.PNG)
+![캡처](https://user-images.githubusercontent.com/63137718/99944071-a37ada00-2db5-11eb-9188-c76fcba9317b.PNG)
 
 
 # git commit
