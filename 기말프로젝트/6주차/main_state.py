@@ -6,11 +6,12 @@ import stage1bg  # 스테이지1배경
 import stage2bg  # 스테이지2배경
 from moveplayer import*
 canvas_width = 1000
-canvas_height = 800
+canvas_height = 700
 
 STATE_IN_GAME, STATE_GAME_OVER = range(2)
 
 CHECK=True#게임오버시 플레이어삭제
+CRUSHOFF=True#스테이지클리어시 충돌x
 
 
 ##로켓및 아이템그려주기 체크####
@@ -31,29 +32,31 @@ def collides_distance(a, b):
 
 
 def check_collision():
-    global state
+    global state,CRUSHOFF
 
-    global SHIELD  # 쉴드충돌
-    for g in gfw.world.objects_at(gfw.layer.shield):
-        if collides_distance(player, g):
-            getitemsound.play()
-            gfw.world.remove((g))
-            SHIELD = True
-            if SHIELD == True:#쉴드생성
-                generator.RSC()
-                player.shieldora()
+    if CRUSHOFF==True:
+        global SHIELD  # 쉴드충돌
+        for g in gfw.world.objects_at(gfw.layer.shield):
+            if collides_distance(player, g):
+                getitemsound.play()
+                gfw.world.remove((g))
+                SHIELD = True
+                if SHIELD == True:#쉴드생성
+                    generator.RSC()
+                    player.shieldora()
 
-    for m in gfw.world.objects_at(gfw.layer.meteor):#운석충돌
-        if collides_distance(player, m):
-            explosionsound.play()
-            gfw.world.remove((m))
+    if CRUSHOFF == True:
+        for m in gfw.world.objects_at(gfw.layer.meteor):#운석충돌
+            if collides_distance(player, m):
+                explosionsound.play()
+                gfw.world.remove((m))
 
-            dead = player.decrease_life()
-            if dead:#게임오버
-                end_game()
-            if SHIELD == True:#쉴드부딪히면파괴
-                player.crushshield()
-                generator.RSM()
+                dead = player.decrease_life()
+                if dead:#게임오버
+                    end_game()
+                if SHIELD == True:#쉴드부딪히면파괴
+                    player.crushshield()
+                    generator.RSM()
 
 
     global HEAD #로켓헤드충돌
@@ -98,9 +101,10 @@ def check_collision():
 
 # 게임시작,끝########################
 def start_game():
-    global state,CLEAR,HEAD,HEAD1,HEAD2,HEAD3
+    global state,CLEAR,HEAD,HEAD1,HEAD2,HEAD3,CHECK
     if state != STATE_GAME_OVER:
         return
+    CHECK=True
     player.reset()
     generator.reset()
     HEAD = False
@@ -118,9 +122,17 @@ def start_game():
 
 def end_game():
     global state,CHECK
-    print('우주미아가 되었습니다')
     CHECK=False
     state = STATE_GAME_OVER
+    music_bg.stop()
+
+def clearstage():#스테이지클리어
+    global state1,CHECK,CRUSHOFF
+    generator.MED()
+    generator.RSC()
+    CHECK = False#플레이어제거
+    CRUSHOFF=False#충돌제거
+    player.crushshield()#방패깨기
     music_bg.stop()
 
 #######################################
@@ -150,6 +162,9 @@ def enter():
 
     global game_over_image  # 게임오버시
     game_over_image = gfw.image.load('res/game_over.png')
+
+    global stage1clear #스테이지1클리어시
+    stage1clear=gfw.image.load('res/stage1clear.png')
 
     global font  # 폰트
     font = gfw.font.load('res/ConsolaMalgun.ttf', 40)
@@ -222,8 +237,9 @@ def draw():
 
 #####모두 모았을시 다음스테이지#########################
     if (HEAD == True and HEAD1 == True and HEAD2 == True and HEAD3 == True):
+        clearstage()
         music_bg.stop()
-        gfw.push(stage2bg)
+        stage1clear.draw(get_canvas_width() //2, get_canvas_height()//2)
 
     # 무브
     if CHECK==True:
@@ -238,8 +254,11 @@ def handle_event(e):
     elif e.type == SDL_KEYDOWN:
         if e.key == SDLK_ESCAPE:
             gfw.pop()
-        elif e.key == SDLK_RETURN:
+        elif e.key == SDLK_RETURN:#엔터 게임시작
             start_game()
+        elif e.key == SDLK_SPACE:#스페이스바 다음스테이지
+            gfw.push(stage2bg)
+
 
 
 

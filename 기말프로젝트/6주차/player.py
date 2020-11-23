@@ -9,12 +9,12 @@ MAX_LIFE = 5
 SH=False #쉴드오라생성
 SHD=True#쉴드효과
 
-def crushshield():
+def crushshield():#쉴드깨기
     global SH,SHD
     SH = False
     SHD=True
 
-def shieldora():
+def shieldora():#쉴드오라
     global SH
     SH=True
 
@@ -65,9 +65,9 @@ def draw():
     global image, pos,SHD
     image.draw(*pos)#플레이어
 
-    o2tank.draw(get_canvas_width() - 30,get_canvas_height() - 680)#산소통이미지
+    o2tank.draw(get_canvas_width() - 30,get_canvas_height()//6)#산소통이미지
     #산소통게이지
-    x, y = get_canvas_width() - 36, get_canvas_height() - 780
+    x, y = get_canvas_width() - 36, get_canvas_height() -680
 
     for i in range(MAX_LIFE):
         o2 = o2insert if i < life else o2del

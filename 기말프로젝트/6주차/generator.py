@@ -15,12 +15,16 @@ import random
 
 METEOR_COUNT = 23
 
+ME=True
 RH=True
 RB=True
 RL=True
 RI=True
 RS=True
 
+def MED():#메테오 사라지게하기
+    global ME
+    ME=False
 def RHC():#로켓헤드 사라지게하기
     global RH
     RH=False
@@ -58,7 +62,8 @@ def update(score):
     shield_count = 1
 
     if gfw.world.count_at(gfw.layer.meteor) < max_count:#운석
-        generate(score)
+        if ME==True:
+            generate(score)
 
     if gfw.world.count_at(gfw.layer.rockethead) <rockethead_count:#로켓머리
         if RH==True:

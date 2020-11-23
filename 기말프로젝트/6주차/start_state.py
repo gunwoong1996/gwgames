@@ -3,7 +3,7 @@ from pico2d import *
 import howtostage1
 
 canvas_width = 1000
-canvas_height = 800
+canvas_height = 700
 
 def enter():
     global image,titlemusic
