@@ -99,17 +99,18 @@
   
   -로켓 오른쪽날개부분객체 구현
   
-  
+ ![캡처wqdqw](https://user-images.githubusercontent.com/63137718/99942132-7b3dac00-2db2-11eb-8c17-36f67a2ba6eb.PNG)
+
  
  
  # 예상 게임 실행흐름
  ![캡처](https://user-images.githubusercontent.com/63137718/99911715-a637e980-2d39-11eb-9a88-4a02049abc59.PNG)
  ![캡처1](https://user-images.githubusercontent.com/63137718/99911717-a89a4380-2d39-11eb-8a4d-8330fb042293.PNG)
- ![캡처3](https://user-images.githubusercontent.com/63137718/99911719-a9cb7080-2d39-11eb-8083-73d901991488.PNG)
- ![캡처4](https://user-images.githubusercontent.com/63137718/99911721-aa640700-2d39-11eb-8d2d-db611fab86bf.PNG)
- ![캡처5](https://user-images.githubusercontent.com/63137718/99911724-ab953400-2d39-11eb-87fd-a577fea6c400.PNG)
+ ![부품획득](https://user-images.githubusercontent.com/63137718/99942136-7ed13300-2db2-11eb-8d83-c5d353828028.gif)
+ ![오라](https://user-images.githubusercontent.com/63137718/99942146-8395e700-2db2-11eb-895b-96527596bc5f.gif)
+ ![스테이지클리어](https://user-images.githubusercontent.com/63137718/99942156-8690d780-2db2-11eb-9b21-969799fb5c8a.gif)
+ ![게임오버](https://user-images.githubusercontent.com/63137718/99942164-885a9b00-2db2-11eb-9936-dcd803c23f30.gif)
 
- 
 
  
  # 개발일정
