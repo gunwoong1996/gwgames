@@ -105,17 +105,17 @@
  
 
  # 예상 게임 실행흐름
-  ##시작화면
+ ##시작화면
  ![캡처](https://user-images.githubusercontent.com/63137718/99911715-a637e980-2d39-11eb-9a88-4a02049abc59.PNG)
-  ##스테이지설명
+ ##스테이지설명
  ![캡처1](https://user-images.githubusercontent.com/63137718/99911717-a89a4380-2d39-11eb-8a4d-8330fb042293.PNG)
-  ##부품획득
+ ##부품획득
  ![부품획득](https://user-images.githubusercontent.com/63137718/99942136-7ed13300-2db2-11eb-8d83-c5d353828028.gif)
-  ##쉴드아이템
+ ##쉴드아이템
  ![ezgif com-gif-maker](https://user-images.githubusercontent.com/63137718/99942362-e8514180-2db2-11eb-87b1-c9820a58e91c.gif)
-  ##1스테이지 클리어
+ ##1스테이지 클리어
  ![스테이지클리어](https://user-images.githubusercontent.com/63137718/99942156-8690d780-2db2-11eb-9b21-969799fb5c8a.gif)
-  ##
+ ##
  ![게임오버](https://user-images.githubusercontent.com/63137718/99942164-885a9b00-2db2-11eb-9936-dcd803c23f30.gif)
 
 
