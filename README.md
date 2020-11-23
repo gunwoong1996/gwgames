@@ -15,6 +15,11 @@
  
  -스테이지2는 우주선을타고 연료가 떨어지기전에 여러 장애물을 피해서 지구로 안전하게 도달해야한다
 
+# 변경사항
+
+# git commit
+![커밋주차별](https://user-images.githubusercontent.com/63137718/99939251-fe5c0380-2dac-11eb-8731-9a6bd683c4bd.PNG)
+
 
 # GameState (Scene)
  main_state,generator,meteor,rockethead,rocketbody,rocketleft,rocketlight,shield,moveplayer,stage1bg,stage2bg,start_state,howtostage1
