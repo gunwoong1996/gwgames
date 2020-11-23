@@ -70,6 +70,38 @@
   
   -스테이지1,2구현
  
+ # Class 구성정보
+  class Move
+  
+  -플레이어의 움직임을 구현
+  
+  class Meteor
+  
+  -운석 구현
+  
+  class Shield
+  
+  -쉴드 아이템 구현
+  
+  class Rockethead
+  
+  -로켓 머리부분객체 구현
+  
+  class Rocketbody
+  
+  -로켓 몸통부분객체 구현
+  
+  class Rocketleft
+  
+  -로켓 왼쪽날개부분객체 구현
+  
+  class Rocketlight
+  
+  -로켓 오른쪽날개부분객체 구현
+  
+  
+ 
+ 
  # 예상 게임 실행흐름
  ![캡처](https://user-images.githubusercontent.com/63137718/99911715-a637e980-2d39-11eb-9a88-4a02049abc59.PNG)
  ![캡처1](https://user-images.githubusercontent.com/63137718/99911717-a89a4380-2d39-11eb-8a4d-8330fb042293.PNG)
