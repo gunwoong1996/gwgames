@@ -13,7 +13,8 @@ class Meteor:
         self.pos = pos
         self.delta = delta
         self.image = gfw.image.load('res/meteor.png')
-        mag = random.uniform(0.7, 1.0)
+        #mag = random.uniform(0.7, 1.0)
+        mag = random.uniform(0.9, 0.9)
         self.radius = mag * self.image.h //2
 
     def update(self):

@@ -2,11 +2,15 @@ from pico2d import *
 import gfw
 import player  # 플레이어 및 여러 이미지처리
 import generator  # 동작처리
-import stage1bg  # 스테이지1배경
-import stage2bg  # 스테이지2배경
+import howtostage2  # 스테이지2설명
+
+from stage1bg import VertScrollBackground
+
+import gobj
 from moveplayer import*
 canvas_width = 1000
 canvas_height = 700
+
 
 STATE_IN_GAME, STATE_GAME_OVER = range(2)
 
@@ -151,15 +155,10 @@ def exit():
 
 # 엔터 드로우 업데이트##################### - 이곳에 반드시추가
 def enter():
-    gfw.world.init(['stage1bg', 'stage2bg', 'meteor', 'player', 'ui', 'rockethead','rocketbody','rocketleft','rocketlight',
+    gfw.world.init(['bg','bg2' , 'meteor', 'player', 'ui', 'rockethead','rocketbody','rocketleft','rocketlight',
                     'shield'])
     player.init()
     gfw.world.add(gfw.layer.player, player)
-
-    ##스테이지
-    stage1bg.init()  # 스테이지1삽입
-    gfw.world.add(gfw.layer.stage1bg, stage1bg)
-
     global game_over_image  # 게임오버시
     game_over_image = gfw.image.load('res/game_over.png')
 
@@ -202,6 +201,14 @@ def enter():
     global move
     move = Move()
 
+    bg =VertScrollBackground('space.png')
+    bg.speed = 100
+    gfw.world.add(gfw.layer.bg, bg)
+
+    bg = VertScrollBackground('spacedust.png')
+    bg.speed = 150
+    gfw.world.add(gfw.layer.bg2, bg)
+
 
 def update():
     if state != STATE_IN_GAME:
@@ -219,11 +226,9 @@ def update():
 
 def draw():
     gfw.world.draw()
-    # score_pos = 30, get_canvas_height() - 30
 
     if state == STATE_GAME_OVER:
         game_over_image.draw(get_canvas_width() //2, get_canvas_height()//2)
-
 
 #######로켓그려주기################################################################
     if HEAD == True:
@@ -257,7 +262,7 @@ def handle_event(e):
         elif e.key == SDLK_RETURN:#엔터 게임시작
             start_game()
         elif e.key == SDLK_SPACE:#스페이스바 다음스테이지
-            gfw.push(stage2bg)
+            gfw.push(howtostage2)
 
 
 

@@ -3,7 +3,7 @@
 from pico2d import *
 import gfw
 
-MOVE_PPS = 230
+MOVE_PPS = 200
 MAX_LIFE = 5
 
 SH=False #쉴드오라생성
