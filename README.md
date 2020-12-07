@@ -126,3 +126,9 @@
  # 개발일정
 
 ![캡처](https://user-images.githubusercontent.com/63137718/97064983-222cfd80-15e5-11eb-8dd5-d49330c85b58.PNG)
+
+# 최종발표
+![캡처](https://user-images.githubusercontent.com/63137718/101324173-24a19900-38ad-11eb-8aa6-aefed00a13a5.PNG)
+![커밋수](https://user-images.githubusercontent.com/63137718/101324178-2703f300-38ad-11eb-89fd-15622cb74da2.PNG)
+![23123](https://user-images.githubusercontent.com/63137718/101324182-28cdb680-38ad-11eb-9133-455546cf8f01.PNG)
+
